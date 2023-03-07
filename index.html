@@ -123,10 +123,10 @@
                 写下你的自我介绍
               </div>
             <div class="mdl-card__actions" >
-              <a href="#" class="mdl-button">放入一张女生纸条</a>
+              <a href="#" class="mdl-button" id="post_girl_paper_button">放入一张女生纸条</a>
             </div>
             <div class="mdl-card__actions" >
-              <a href="#" class="mdl-button">抽取一张女生纸条</a>
+              <a href="#" class="mdl-button" id = "get_boy_paper_button">抽取一张女生纸条</a>
             </div>
               
             </div>
@@ -261,8 +261,9 @@
         <!-- Floating Multiline Textfield -->
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="email">
-            <label class="mdl-textfield__label" for="email">学生邮箱</label>
+            <input class="mdl-textfield__input" type="text" id="email" pattern="[A-Z,a-z,0-9]*@stu.xmu.edu.cn" >
+            <label class="mdl-textfield__label" for="email">学生邮箱(目前仅支持厦大邮箱)</label>
+            <span class="mdl-textfield__error">请输入正确的厦大邮箱</span>
           </div>
           <!-- Raised button with ripple -->
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
@@ -280,7 +281,7 @@
         </form>
       </div>
       <div class="mdl-dialog__actions">
-        <button type="button" class="mdl-button">放入</button>
+        <button type="button" class="mdl-button" id = "post_button">放入</button>
         <button type="button" class="mdl-button close">取消</button>
       </div>
     </dialog>
