@@ -1,4 +1,4 @@
-root = '127.0.0.1:5000'
+root = 'http://127.0.0.1:5000'
 var dialog = document.querySelector('dialog');
 if (!dialog.showModal) {
     dialogPolyfill.registerDialog(dialog);
